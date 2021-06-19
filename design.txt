@@ -1,0 +1,19 @@
+colors: 
+Primary
+#0A356F - Prussian Blue
+#F2542D - Orange Soda
+#A11692 - Dark Magenta
+
+Neutral
+#707070 - Medium Gray
+
+Typography:
+Poppins - https://fonts.google.com/specimen/Poppins?query=poppins
+
+
+
+
+
+
+
+

@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "Poppins";
+    src: url("Poppin/Poppins-Regular.ttf");
+}
+@font-face {
+    font-family: "Poppins-Bold";
+    src: url("Poppin/Poppins-Bold.ttf");
+}
+@font-face {
+    font-family: "Poppins-Light";
+    src: url("Poppin/Poppins-Light.ttf");
+}
+@font-face {
+    font-family: "Poppins-Extra-Bold";
+    src: url("Poppin/Poppins-ExtraBold.ttf");
+}
+body{
+    background-image: url("images/main-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: auto 1200px;
+    background-position-x: center;
+    z-index: -9;
+}
+.main-body{
+    margin: 0 100px;
+}
+.header-text{
+    font-family: Poppins-Extra-Bold;
+    color: #0A356F;
+    font-size: 35px;
+    padding: 60px 0 30px;
+}
+.main-text em{
+    font-family: Poppins-Bold;
+    font-style: normal;
+    color: #F2542D;
+}
+.background-text{
+    font-family: Poppins-Extra-Bold;
+    position: absolute;
+    color: #707070;
+    opacity: .15;
+    font-size: 70px;
+    padding: 40px 150px;
+    z-index: -1;
+}
+.square-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.seven-mile, .matira-beach, .funda-lagoon{
+    margin: 25px 0;
+    width: 270px;
+    height: 400px;
+}
+.seven-mile, .matira-beach, .funda-lagoon{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px rgb(110, 110, 110);
+}
+.content-text span, .content-text p, .content-info span{
+    font-family: Poppins;
+    color: #707070;
+    font-size: 12px;
+}
+.content-text h3{
+    font-family: Poppins-Bold;
+    font-size: 22px;
+    padding-bottom: 10px;
+}
+.seven-mile h3, .seven-mile i{
+    color: #0A356F;
+}
+.matira-beach h3, .matira-beach i{
+    color: #F2542D;
+}
+.funda-lagoon h3, .funda-lagoon i{
+    color: #A11692;
+}
+.seven-mile i:hover{
+    color: #2d2c33;
+    cursor: pointer;
+}
+.matira-beach i:hover{
+    color: #2d2c33;
+    cursor: pointer;
+}
+.funda-lagoon i:hover{
+    color: #2d2c33;
+    cursor: pointer;
+}
+.seven-mile{
+    background-image: url("images/seven-mile-beach.jpg");
+    background-size: 270px 42%;
+    background-repeat: no-repeat;
+}
+.matira-beach{
+    background-image: url("images/matira-beach.jpg");
+    background-size: 270px 42%;
+    background-repeat: no-repeat;
+}
+.funda-lagoon{
+    display: none;
+    background-image: url("images/fundu-lagoon.jpg");
+    background-size: 270px 42%;
+    background-repeat: no-repeat;
+}
+.content-text{
+    display: flex;
+    align-items: flex-end;
+}
+.content-info{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 10px 0 0 0;
+}
+.content-info i{
+    font-size: 15px;
+}
+.footer{
+    font-family: Poppins-Light;
+    font-size: 13px;
+    text-align: center;
+    padding-bottom: 20px;
+    color: white;
+}
+.footer em{
+    font-style: normal;
+    color: rgb(117, 165, 255);
+}
+@media (min-width: 1200px){
+    body{
+        background-image: none;
+    }
+    .main-body{
+        margin: 70px 190px;
+        background: rgba(255, 255, 255, .5) url("images/main-bg.jpg");
+        background-blend-mode: overlay;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 20px;
+        z-index: -5;
+    }
+    .main-text{
+        padding: 70px 10% 15px;
+    }
+    .header-text{
+        font-size: 50px;
+        padding: 0 14% 0;
+    }
+    .background-text{
+        font-size: 70px;
+        padding: 0 25%;
+        z-index: 0;
+    }
+    .funda-lagoon{
+        display: flex;
+    }
+    .seven-mile, .matira-beach, .funda-lagoon{
+        margin: 25px 0;
+        width: 210px;
+        height: 300px;
+    }
+    .content-text span, .content-text p, .content-info span{
+        font-size: 7.5px;
+    }
+    .content-text h3{
+        font-family: Poppins-Extra-Bold;
+        font-size: 15px;
+    }
+    .square-container{
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        gap: 50px;
+        padding-bottom: 50px;
+    }
+    .footer{
+        color: black;
+    }
+}
